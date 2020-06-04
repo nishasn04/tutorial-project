@@ -19,3 +19,10 @@ models:
             tests:
                 - unique
                 - not_null
+
+sources:
+  - name: chicago_crime
+    database: data-analysis-207614
+    schema: analytics_dev
+    tables:
+       - name: crime
