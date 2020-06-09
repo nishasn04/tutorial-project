@@ -26,3 +26,9 @@ sources:
     schema: analytics_dev
     tables:
        - name: crime
+
+  - name: transactions
+    database: data-analysis-207614
+    schema: prod_fv_platform
+    tables:
+       - name: transactions

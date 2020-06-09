@@ -1,1 +1,0 @@
-select * from  {{ ref ('staging_chicago_crime')}}
