@@ -22,8 +22,8 @@ models:
 
 sources:
   - name: chicago_crime
-    database: data-analysis-207614
-    schema: analytics_dev
+    database: bigquery-public-data
+    schema: chicago_crime
     tables:
        - name: crime
 
