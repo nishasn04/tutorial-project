@@ -1,0 +1,39 @@
+version: 2
+
+models:
+  - name: stg_suspensions
+    description: suspensions table of subscriptions happened and resumed data
+    columns:
+      - name: id
+        description: >
+          Unique identifier for the suspensions table
+        tests:
+          - unique
+          - not_null
+      - name: subscription_id
+        tests:
+          - not_null
+      - name: created_at
+        tests:
+          - not_null
+          - dbt_utils.not_constant
+      - name: resumed_at
+        tests:
+          - dbt_utils.not_constant
+
+  - name: stg_boxes
+    description: boxes table with delivery dates
+    columns: 
+      - name: id
+        description: >
+          Unique identifier for the boxes table
+        tests: 
+          - unique
+          - not_null
+      - name: subscription_id
+        tests:
+          - not_null
+      - name: delivery_date
+        tests: 
+          - dbt_utils.not_constant 
+

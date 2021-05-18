@@ -1,0 +1,12 @@
+version: 1
+
+sources:
+  - name: compute_wh
+    database: butternutbox
+    schema: public
+
+    tables:
+      - name: s_suspensions
+        identifier: suspensions
+      - name: s_boxes
+        identifier: boxes
